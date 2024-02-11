@@ -1,0 +1,26 @@
+/* StepIndicator.css */
+
+.step-indicator {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd; /* Default color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+  }
+  
+  .step.active {
+    background-color: #4caf50; /* Active color */
+    color: white;
+  }
+  

@@ -1,0 +1,60 @@
+/* Home.css */
+.home-page{
+  display: flex;
+  flex-direction: column;
+  background-color:#F2F2F2
+}
+.image-first {
+
+  margin-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 100px;
+}
+
+.image-first img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove extra space below inline images */
+}
+
+
+.home-down{
+ 
+}
+.product-zone {
+  position: relative;
+  background-color: white;
+  margin-left: 100px;
+  margin-right: 120px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subcategory-zone {
+  /* Additional styles for the zone containing subcategories */
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+.image-first{
+  padding-left: 10px;
+}
+.navigation-menu {
+  
+  display: flex;
+  flex-direction: column; /* Change to column to stack items vertically */
+
+  top: 100px;
+  left: 0;
+   /* Adjust the width as needed */
+ 
+
+}
+ul {
+  list-style-type: none;
+  
+  display: flex;
+  flex-direction: column; /* Change to column to stack items vertically */
+  justify-content: flex-start;
+}
+}

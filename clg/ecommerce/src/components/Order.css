@@ -1,0 +1,16 @@
+    /* OrderTable.css */
+    .order-table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .order-table th, .order-table td {
+        border: 1px solid red;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    .order-table th {
+        background-color: #f2f2f2;
+    }
+    

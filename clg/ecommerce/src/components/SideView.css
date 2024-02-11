@@ -1,0 +1,76 @@
+.sideview-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin-left: 10px;
+  overflow: hidden; /* Hide any content overflow */
+}
+
+.main-image1 {
+  position: relative;
+  flex: 0.8;
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.main-image1 img {
+  width: 140%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: 100px;
+  max-height: 500px; /* Adjust the max-height as needed */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.additional-image1 {
+  flex: 0.45;
+  padding-left: 20px; /* Adjust as needed */
+}
+
+.additional-image1 img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.additional-image-row {
+  margin-bottom: 10px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.carousel-button.left {
+  left: 5px;
+  font-size: 30px;
+  color: white;
+}
+
+.carousel-button.right {
+  right: 5px;
+  font-size: 30px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main-image img {
+    margin-right: 0;
+  }
+
+  .additional-image {
+    flex: 1;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,77 @@
+.navigation-menu {
+
+  background-color: white;
+  padding: 0px 10px;
+  border-top: 1px solid lightgray;
+  text-align: right;
+  padding-left: 80px;
+ 
+   /* Add margin to the left of the navigation menu */
+  
+}
+
+.navigation-menu.show {
+  transform: translateX(0);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Keep items aligned to the start */
+}
+
+li {
+  margin-left: 20px; /* Adjust margin to separate items */
+  position: relative;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px;
+  display: block;
+}
+
+
+
+/* Adjustments for icon placement */
+img {
+  margin-right: 8px;
+}
+
+.sidebar-button1{
+  display: flex;
+  color:white;
+  background-color: black;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 20px;
+  margin-bottom: 4px;
+  margin-right: 20px;
+  padding-right: 10px;
+  
+}

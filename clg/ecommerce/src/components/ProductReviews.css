@@ -1,0 +1,25 @@
+/* ProductReviews.css */
+
+.review-container {
+  margin-top: 200px;
+  margin-left: 70px;
+}
+
+.review-list {
+  list-style: none;
+  padding: 0;
+}
+
+.review-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review-user {
+  font-weight: bold;
+}
+
+.review-rating {
+  color: #FFD700; /* Set the color for the rating, e.g., yellow */
+}

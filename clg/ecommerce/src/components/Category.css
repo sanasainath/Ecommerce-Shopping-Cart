@@ -1,0 +1,125 @@
+/* Add this to your existing CSS file or create a new one */
+.category-container {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .category-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .category-item {
+    border-bottom: 1px solid #8b8989;
+    padding: 8px;
+    cursor: pointer;
+  
+  }
+  .getcategories{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .category-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .category-name {
+    font-weight: bold;
+  }
+  
+  .category-list > .category-item > ul {
+    display: none;
+  
+    left: 100%;
+    top: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-list > .category-item:hover > ul {
+    display: block;
+  }
+  
+
+  .modalBackground {
+    width: 90vw;
+    height: 70vh;
+    background-color: rgba(200, 200, 200);
+   
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer {
+    width: 500px;
+    max-height: 250vh;
+    overflow-y: auto; 
+    border-radius: 12px;
+    z-index: 1001;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+  
+  .modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+    overflow-y: auto;
+  }
+  
+  .modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body1{
+display: flex;
+flex-direction: column;
+
+  }
+  .modalContainer .footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #cancelBtn {
+    background-color: crimson;
+  }

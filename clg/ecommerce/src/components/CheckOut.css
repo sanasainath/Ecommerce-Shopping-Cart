@@ -1,0 +1,98 @@
+/* Step styles */
+.step-content {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top:20px;
+}
+
+.step-content:not(:last-child) {
+  margin-bottom: 40px;
+  border-bottom: 2px solid #ddd;
+}
+
+.step1, .step2, .step3 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add some color to separate steps */
+.step1 {
+  background-color:slategray;
+  color: #fff;
+}
+
+.step2 {
+  background-color: #008080;
+  color: #fff;
+}
+
+.step3 {
+  background-color: #f5a623;
+  color: #fff;
+}
+
+/* Address section styles */
+.user-address {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Existing address styles */
+.existing-address {
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.existing-address:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* New address form styles */
+.new-address-form {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease-in-out;
+}
+
+.new-address-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.new-address-form button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styles */
+@media only screen and (min-width: 768px) {
+  .existing-address {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .existing-address {
+    width: calc(33.33% - 20px);
+  }
+}

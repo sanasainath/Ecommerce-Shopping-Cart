@@ -1,0 +1,38 @@
+/* ShopHead.css */
+
+.shop-container {
+    margin: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product-info {
+    padding: 10px;
+  }
+  
+  .price {
+    color: #007bff;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,24 @@
+/* ProductDetailsPage.css */
+
+/* ... other styles ... */
+
+.star-rating {
+    display: flex;
+  }
+  
+  .star {
+    font-size: 20px;
+    color: orange;/* Set star color to gold */
+    margin-right: 5px; /* Add margin between stars */
+  }
+  
+  .selected {
+    color:  #ffd700;; /* Set selected star color to orange */
+  }
+  
+  .star-fill {
+    color: #ffffff; /* Set color to white for unfilled stars */
+  }
+  
+  /* ... other styles ... */
+  

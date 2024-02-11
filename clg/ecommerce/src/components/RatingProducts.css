@@ -1,0 +1,74 @@
+/* RatingProducts.css */
+
+.top-rated-products {
+  margin: 20px;
+  border-bottom: 1px solid rgb(180, 170, 170);;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  width: calc(17.33% - 20px); /* Adjust width and add some gap */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  height: 300px; /* Set a fixed height for the product card */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom:15px ;
+  border-bottom: 1px solid #ddd;
+  max-height: 150px; /* Set a fixed height for the images */
+  object-fit: contain; /* Maintain aspect ratio and cover the container */
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */
+}
+
+.product-card p {
+  margin: 5px 0;
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */
+}
+
+.product-link {
+  text-decoration: none; /* Remove default underline */
+  color: #333; /* Set the text color */
+}
+
+.product-link:hover {
+  color: #ff5733; /* Set the text color on hover */
+  /* Add other hover styles as needed */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 20px); /* Two cards per row with some gap on smaller screens */
+  }
+
+  @media screen and (max-width: 575px) {
+    .product-card {
+      width: calc(100% - 20px); /* One card per row on smaller screens */
+    }
+  }
+}

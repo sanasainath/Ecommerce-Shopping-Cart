@@ -1,0 +1,268 @@
+
+  /* Existing styles */
+  .headerss {
+    flex-wrap: wrap;
+  }
+  
+  .headerss p {
+    margin: 0;
+  }
+.header-top {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+
+}
+
+.addresss {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+  
+  
+  align-items: center;
+
+}
+
+
+
+  .addresss > div {
+    font-size: 14px;
+  }
+  
+  .addresss > div:first-child {
+    padding-left: 40px;
+  }
+  
+  .addresss > div:nth-child(2) {
+    margin-left: 30px; /* Adjust this value as needed */
+  }
+  
+  .addresss > div:last-child {
+    margin-right: 60px; /* Adjust this value as needed */
+  }
+  
+  .account-user,
+  .login-user {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .account-user p,
+  .login-user p {
+    margin-left: 5px;
+  }
+  
+  .account-user > svg,
+  .login-user > svg {
+    margin-right: 5px;
+  }
+  
+.header-start {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top:0;
+  margin-left: 80px;
+    margin-top: -5px;
+  }
+  
+  
+  
+  .header-name {
+    display: flex;
+    align-items: center;
+
+
+    
+
+  
+  
+  }
+  
+  .header-image {
+    margin-right: 1px;
+  }
+  
+  .text-container {
+    text-align: left;
+    margin-right: 40px;
+
+  
+  }
+  
+  .header-search {
+    display: flex;
+    justify-content:flex-start;
+ margin-left: auto;
+ margin-top: 20px;
+ 
+ 
+    
+  
+   
+  }
+  
+  .search-one {
+    border: 2px solid #FF5F1F ; 
+    outline: none;
+
+    margin-left: 5px;
+    height: 45px;
+  
+
+    border-radius: 0px; /* Optional: Apply border-radius to the input */
+    padding: 0px 20px; /* Optional: Apply padding to the input */
+  }
+  .sidebar-button{
+    display: flex;
+    color:white;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .search-icon-wrapper {
+    background-color: #FF5F1F; /* Apply the background color to the wrapper */
+    padding: 11px 34px; /* Optional: Apply padding to the wrapper */
+    border-radius: 1px;
+    height: 23px; /* Optional: Apply border-radius to the wrapper */
+    margin-top:5px;
+  }
+  
+  .search-icon {
+    font-size: 30px;
+
+    color: white; /* Set the color of the icon to white */
+  }
+  
+  .love {
+    position: relative;
+    display: flex;
+  
+    margin-left: 20px;
+ 
+  
+  }
+ 
+  
+  .love1 {
+    position: relative;
+    display: flex;
+
+    margin-left:20px;
+  }
+  .love2 {
+    display: flex;
+    margin-top: -20px;
+    flex-direction: column;
+    align-items: center;
+ 
+ 
+   
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-right: 70px;
+ 
+
+  }
+  .user-sections{
+    display: flex;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 4px;
+  
+  
+
+  }
+  .love1 p {
+    position: absolute;
+   top:-10px;/* Adjust the top value to move the "0" higher or lower */
+    right: 0;
+    margin: 0;
+  }
+  .love p {
+    position: absolute;
+    top: -10px; /* Adjust the top value to move the "0" higher or lower */
+    right: 0;
+    margin: 0;
+  }
+ 
+  .total-section {
+    text-align: right;
+  }
+  
+  .total-section p {
+    margin: 0;
+    font-weight: bold;
+  } 
+  
+/* Existing styles */
+
+/* Add the following media query */
+@media (max-width: 768px) {
+  .headerss {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .headerss > * {
+    margin-bottom: 10px;
+  }
+  .header-start {
+display: flex;
+
+position: sticky;
+top:0;
+    flex-direction: column; /* Change the direction to column for header-start on smaller screens */
+ /* Center items on smaller screens */
+ /* Reset the margin-left for header-start on smaller screens */
+  }
+
+  .header-search {
+    margin-top: 14px;
+    
+  
+ 
+   
+   /* Add space between header-search and the other elements on smaller screens */
+  }
+  .search-one{
+    margin-left: -80px;
+  }
+.love2{
+  margin-right: -10px;
+}
+  .love1{
+    margin-right: -12px;
+  }
+  
+   
+  
+  
+  .user-sections{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .allicons{
+    margin-right: 20px;
+    display: none;
+  
+  }
+  .sidebar-button{
+    top:20px;
+  }
+  
+}
+

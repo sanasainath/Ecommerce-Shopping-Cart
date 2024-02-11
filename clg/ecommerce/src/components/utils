@@ -1,0 +1,60 @@
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllCategories } from '../action/categoryaction';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import './Sidebar.css';
+
+function Sidebar() {
+  const dispatch = useDispatch();
+  const categories = useSelector((state) => state.category.categories);
+
+  useEffect(() => {
+    dispatch(getAllCategories());
+  }, [dispatch]);
+  const renderCategories = (categories) => {
+    let myCategories = [];
+    for (let category of categories) {
+      myCategories.push(
+        <li key={category.name}>
+          {
+            category.parentId ? // Modify the href attribute to include type if it exists
+            <a href={`/${category.slug}?cid=${category._id}${category.type ? `&type=${category.type}` : ''}`}>
+              {category.name}
+            </a>
+             :
+            <span>{category.name}</span>
+          }
+          {category.children.length > 0 ? (<ul>{renderCategories(category.children)}</ul>) : null}
+        </li>
+      );
+    }
+  
+    return myCategories;
+  }
+
+    return (
+      <div className='sidebar-top'>
+        <div className='side1'>
+          <h2 style={{ fontSize: '20px', color: 'gray' }}>☰</h2>
+          <h2 style={{ fontWeight: '400', fontSize: '20px', color: 'gray', paddingLeft: '10px' }}> All Products</h2>
+        </div>
+
+      
+          <div className='deal' >
+            <img src='./images/icons8-square-24.png' alt='not found' width='4px' height='4px' style={{ paddingTop: '9px' }} />
+            <div className='category-info'>
+            <ul>
+        {categories.length > 0 ? renderCategories(categories) : null}
+      </ul>
+            </div>
+            <ArrowForwardIosIcon style={{ fontSize: '10px', color: '#28282B', marginLeft: 'auto' }} />
+          </div>
+     
+      </div>
+    );
+  };
+
+
+
+
+export default Sidebar;
